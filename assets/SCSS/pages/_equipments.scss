@@ -1,0 +1,36 @@
+.equipments_hero {
+    .customColor {
+        color: #FF8C00;
+    }
+}
+
+.equipments_managment {
+    .items_one {
+        .items_one__title {
+            margin: 0 6px 24px;
+            font-weight: $weight-700;
+            line-height: 68px;
+            letter-spacing: -2px;
+            width: 50%;
+            position: relative;
+
+            @mixin beforeAfter($LR){
+                content: '';
+                position: absolute;
+                background-color: $blue-500;
+                height: 40px;
+                width: 1px;
+                #{$LR}: 0;
+                top: 18px;
+            }
+
+            &::before {
+                @include beforeAfter(left);
+            }
+
+            &::after {
+               @include beforeAfter(right);
+            }
+        }
+    }
+}

@@ -1,0 +1,175 @@
+// .mainPm {
+//     background: $bg-2;
+// }
+.cost {
+    &.features-manage.manage {
+        .accordiondSection {
+            &::after {
+                content: url('../../images/topCost.svg');
+                #{$right}: 55px !important;
+
+                @include max992 {
+                    content: url('../../images/topCost__tablet.svg');
+                    top: 160px;
+                    #{$right}: -10px !important;
+                }
+            }
+
+            .accordiondContent {
+                position: relative;
+
+                &::after {
+                    content: url('../../images/bottomCost.svg');
+                    position: absolute;
+                    bottom: -20px;
+                    #{$left}: -90px !important;
+                    z-index: -1;
+
+                    @include max1366 {
+                        #{$left}: -90px;
+                        bottom: 0;
+                    }
+
+                    @media (min-width: 1280px) and (max-width: 1300px) {
+                        #{$left}: -20px !important;
+                        bottom: -20px;
+                    }
+
+                    @include max992 {
+                        content: url('../../images/bottomCost__tablet.svg');
+                        #{$left}: -40px !important;
+                        bottom: 90px;
+                    }
+
+                    @media (min-width: 830px) and (max-width: 864px) {
+                        #{$left}: 10px !important;
+                        bottom: 90px;
+
+                    }
+
+                    @media (min-width: 864px) and (max-width: 991px) {
+                        #{$left}: 10px !important;
+                        bottom: 65px;
+                    }
+
+
+                }
+
+                .img {
+                    img {
+                        margin-top: 10px;
+                        position: relative;
+                        #{$left}: 100px;
+                        border-radius: 8px !important;
+
+                        @include max1366 {
+                            #{$left}: 170px !important;
+                        }
+
+                        @include max992 {
+                            width: 636px;
+                            height: 388px;
+                            #{$left}: 0 !important;
+                            margin-top: 100px;
+
+                        }
+
+                        @include max768 {
+                            margin-top: 0;
+                            #{$left}: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.features_pm {
+    background: $white  !important;
+
+    .container {
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            #{$right}: 1px;
+            background-image: url('../../images/Pattern_pm.svg');
+            height: 100%;
+            width: 49.8%;
+            z-index: -1;
+
+            @include max768 {
+                background-image: none;
+            }
+        }
+    }
+
+    .organize-features__title,
+    .organize_manage__content__title {
+        color: $green-500  !important;
+    }
+
+    &__title {
+        text-align: #{$left};
+        width: 50%;
+        position: relative;
+        #{$left}: 50%;
+        margin-bottom: 50px;
+
+        @include max768 {
+            #{$left}: 0%;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__img_sec {
+        img {
+            position: relative;
+            z-index: 2 !important;
+        }
+
+        &::before {
+            z-index: 1 !important;
+        }
+
+        &::after {
+            z-index: 1 !important;
+        }
+    }
+
+    &__img {
+        position: relative;
+        #{$right}: 10px;
+
+        @include max768 {
+            #{$right}: 0;
+        }
+
+        img {
+            position: relative;
+            z-index: 2 !important;
+        }
+
+        &::before {
+            content: url('../../images/pattern_bottom_pm.svg');
+            z-index: 1 !important;
+        }
+
+        &::after {
+            content: url('../../images/pattern_top_pm.svg');
+            z-index: 1 !important;
+
+        }
+    }
+
+    .item {
+        .title {
+            color: $black !important;
+        }
+    }
+}

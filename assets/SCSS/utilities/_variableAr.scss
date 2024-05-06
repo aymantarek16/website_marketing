@@ -1,0 +1,186 @@
+//
+// Variables
+// --------------------------------------------------
+@import "./fonts";
+
+/* Fonts  Vars*/
+
+$muli-r	 : cairo-r;
+$muli-l	 : cairo-r;
+$muli-black		 : cairo-black;
+$muli-sb		 : cairo-b;
+$muli-b : cairo-b;
+$muli-bt : font-b;
+$muli-xb : cairo-xb;
+
+$sans-r		 : cairo-r;
+$sans-sb		 : cairo-sb;
+$sans-b		 : cairo-b;
+
+$roboto-m		 : roboto-M;
+
+$font-num : Myriad Pro,
+Arial,
+sans-serif;
+$fa				 : FontAwesome;
+
+
+
+$muli :'Cairo';
+
+/********************************************/
+
+// == background == //
+
+$bg-1: linear-gradient(196.03deg, #1C1E26 10.93%, #121418 89.23%);
+$bg-2: #101114;
+$bg-3 : linear-gradient(270deg, rgba(32, 71, 252, 0.8) 0%, #2047FC 98.82%) ;
+
+
+
+// == Colors == //
+
+/*Cobalt */
+$cobalt-50 : #EBEDFA;
+$cobalt-100: #D2D7F0;
+$cobalt-200: #949CE3;
+$cobalt-300: #535FCF;
+$cobalt-400: #0E1FC1;
+$cobalt-500: #0A1899;
+$cobalt-600: #081270;
+$cobalt-700: #050C4D;
+$cobalt-800: #030940;
+$cobalt-900: #01062E;
+
+/*Blue */
+$blue-50: #F2F4FF;
+$blue-100: #CFD6FF;
+$blue-200: #9EAEFF;
+$blue-300: #617BFF;
+$blue-400: #4261FF;
+$blue-500: #294CFF;
+$blue-600: #0F35F5;
+$blue-700: #0321B9;
+$blue-800: #011474;
+$blue-900: #00093B;
+;
+
+/*#Light Green*/
+$lightgreen-50 : #EEFAED;
+$lightgreen-100: #CEF0CC;
+$lightgreen-200: #B7F0B4;
+$lightgreen-300: #8BE68A;
+$lightgreen-400: #63DB63;
+$lightgreen-500: #37CC3A;
+$lightgreen-600: #0BCD0F;
+$lightgreen-700: #09B30F;
+$lightgreen-800: #088A0F;
+$lightgreen-900: #056E0E;
+
+/*Green */
+$green-50 : #F7FAF8;
+$green-100: #E3F7EC;
+$green-200: #C0F0D3;
+$green-300: #82D9A6;
+$green-400: #56BF84;
+$green-500: #39A96B;
+$green-600: #219456;
+$green-700: #168047;
+$green-800: #0D6B39;
+$green-900: #045228;
+
+/*Yellow */
+$yellow-50 : #FFFDF0;
+$yellow-100: #FFF9D4;
+$yellow-200: #FFF1A1;
+$yellow-300: #FFE866;
+$yellow-400: #FFE033;
+$yellow-500: #FFDA08;
+$yellow-600: #EBCC05;
+$yellow-700: #B89F02;
+$yellow-800: #7A6A01;
+$yellow-900: #524701;
+
+/*Red*/
+$red-50 : #FFEFED;
+$red-100: #FED7D2;
+$red-200: #F1998E;
+$red-300: #E85C4A;
+$red-400: #E1412D;
+$red-500: #E11900;
+$red-600: #AB1300;
+$red-700: #870F00;
+$red-800: #690C00;
+$red-900: #4D0900;
+
+/*grey*/
+$grey-50 : #F7F9FA;
+$grey-100: #F0F3F5;
+$grey-200: #DFE7EB;
+$grey-300: #B1C2C9;
+$grey-400: #8FA3AD;
+$grey-500: #6C7C83;
+$grey-600: #556068;
+$grey-700: #393F45;
+$grey-800: #252832;
+$grey-900: #1E212A;
+$header : #252833;
+
+/*platinum*/
+$platinum-50 : #F7F9FC;
+$platinum-100: #EDF1F7;
+$platinum-200: #D8DFED;
+$platinum-300: #C7CEDB;
+$platinum-400: #B8C1D1;
+$platinum-500: #A1ABBF;
+$platinum-600: #7B869E;
+$platinum-700: #525C75;
+$platinum-800: #333B52;
+$platinum-900: #1D2133;
+
+$white: #fff;
+$black: #1c1e26;
+$focus: #83b4fc;
+$pale_grey: #fafbfc;
+$pale_grey_active: #e9ecf0;
+
+$gradientBackground: linear-gradient(196.03deg, $black 10.93%, #121418 89.23%);
+
+
+/*Basic Spacing*/
+$px-2: 2px;
+$px-4: 4px;
+$px-8: 8px;
+$px-16: 16px;
+$px-32: 32px;
+$px-64: 64px;
+
+////////////////////////////////////
+
+//== Typography
+//
+
+$font-120: 120px !default;
+$font-60: 60px !default;
+$font-45: 45px !default;
+$font-36: 36px !default;
+$font-34: 34px !default;
+$font-32: 32px !default;
+$font-28: 28px !default;
+$font-24: 24px !default;
+$font-20: 20px !default;
+$font-18: 18px !default;
+$font-16: 16px !default;
+$font-14: 14px !default;
+$font-12: 12px !default;
+$font-10: 10px !default;
+
+$letterspacing: -0.2px;
+
+
+$weight-300: 300;
+$weight-400: 400;
+$weight-600: 600;
+$weight-700: 700;
+$weight-800: 800;
+$weight-900: 900;

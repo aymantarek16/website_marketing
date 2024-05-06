@@ -1,0 +1,20 @@
+<svg width="76" height="56" viewBox="0 0 76 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:multiply">
+<path d="M63.0625 7.9375H21.6824C19.4732 7.9375 17.6824 9.72836 17.6824 11.9375V36.9498C17.6824 39.1589 19.4732 40.9498 21.6824 40.9498H63.0625C65.2716 40.9498 67.0625 39.1589 67.0625 36.9498V11.9375C67.0625 9.72836 65.2716 7.9375 63.0625 7.9375Z" fill="#37CC3A"/>
+</g>
+<g style="mix-blend-mode:overlay">
+<path d="M57.8586 18.5879H35.6209V21.4926H57.8586V18.5879Z" fill="#63DB63"/>
+</g>
+<g style="mix-blend-mode:overlay">
+<path d="M51.7241 23.4287H35.6209V26.3334H51.7241V23.4287Z" fill="#63DB63"/>
+</g>
+<g style="mix-blend-mode:overlay">
+<path d="M54.7913 28.2705H35.6209V31.1752H54.7913V28.2705Z" fill="#63DB63"/>
+</g>
+<g style="mix-blend-mode:hard-light">
+<path d="M25.793 7.61523H12C9.79086 7.61523 8 9.4061 8 11.6152V43.5691C8 45.7783 9.79086 47.5691 12 47.5691H25.793C28.0022 47.5691 29.793 45.7783 29.793 43.5691V11.6152C29.793 9.4061 28.0022 7.61523 25.793 7.61523Z" fill="#0F35F5"/>
+</g>
+<g style="mix-blend-mode:color-dodge">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.6322 33.4629C11.6322 42.8406 26.6457 43.0386 26.6457 33.4629H11.6322Z" fill="#9EAEFF"/>
+</g>
+</svg>

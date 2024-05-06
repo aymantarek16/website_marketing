@@ -1,0 +1,594 @@
+ 
+@import "./mediaQuery";
+.zero {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body::-webkit-scrollbar,
+.header .navbar .navbar-nav .nav-item .menu .parent::-webkit-scrollbar,
+.header .navbar .mobile-menu .m-menu__body ul::-webkit-scrollbar,
+.header .navbar .navbar-nav .nav-item .sub-menu .child::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track,
+.header .navbar .navbar-nav .nav-item .menu .parent::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+body::-webkit-scrollbar-thumb,
+.header .navbar .navbar-nav .nav-item .menu .parent::-webkit-scrollbar-thumb,
+.header .navbar .mobile-menu .m-menu__body ul::-webkit-scrollbar-thumb,
+.header .navbar .navbar-nav .nav-item .sub-menu .child::-webkit-scrollbar-thumb {
+    background-color: $platinum-900;
+    border-radius: 20px;
+}
+
+::selection {
+    background: $lightgreen-700;
+    color: #fff;
+}
+
+/* Safari */
+
+::-moz-selection {
+    background: $lightgreen-700;
+    color: #fff;
+}
+
+/* Firefox */
+
+:-moz-placeholder,
+.form-control::-moz-placeholder {
+    color: $grey-100;
+}
+
+::-webkit-input-placeholder,
+.form-control::-webkit-input-placeholder {
+    color: $grey-100;
+}
+
+:-ms-input-placeholder,
+.form-control::-ms-input-placeholder {
+    color: $grey-100;
+}
+
+a,
+a:hover,
+a:link,
+a:active,
+a:focus,
+a:visited {
+    outline: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    line-height: normal;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+    box-shadow: none;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 0;
+    direction: $ltr;
+    overflow-x: hidden;
+    // min-width: 1024px;
+    // color: $white;
+    font-family: $muli, $muli-r;
+    background-color: $grey-50;
+    // &::after {
+    //     content: "";
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-image: url("../../images/Lines.png");
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     z-index: 1;
+    //     opacity: 0.4;
+    // }
+}
+.row {
+    > * {
+        padding-#{$left}: 8px;
+        padding-#{$right}: 8px;
+    }
+}
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        &:not(:last-of-type) {
+            margin-#{$right}: 16px;
+        }
+
+        // .facebook {
+        //     &:hover {
+        //         svg {
+        //             path {
+        //                 fill: #1877f2;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}
+.row {
+    margin: 0;
+}
+.container {
+    position: relative;
+    z-index: 3;
+    margin: auto;
+    max-width: 100%;
+    padding: 0;
+    @include min1921 {
+        max-width: 1320px;
+    }
+    @include customMediaL {
+        width: 1076px;
+    }
+    @include max1280 {
+        width: 920px;
+    }
+    @include max992 {
+        width: 95%;
+    }
+    @include max576 {
+        width: 87%;
+    }
+    // &::after {
+    //     content: "";
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-image: url("../../images/Lines.png");
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     z-index: -1;
+    //     // opacity: 0.1;
+    // }
+    // > * {
+    //     position: relative;
+    //     z-index: 3;
+    // }
+}
+
+.dropdown-toggle {
+    &::after {
+        display: none;
+    }
+}
+
+.language {
+    .dropdown-toggle {
+        padding: 0;
+        border: 0;
+        &.show {
+            .language__arrow {
+                transform: rotate(180deg);
+            }
+        }
+        &::after {
+            display: none;
+        }
+        position: relative;
+        &::before {
+            content: url("../../images/icons/langEarthHover.svg");
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 2px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s linear;
+        }
+    }
+    // &__earth {
+    // }
+    &__title {
+        font-family: $sans-r;
+        font-size: $font-12;
+        line-height: 22px;
+        color: $white;
+        margin-#{$left}: 9px;
+        margin-#{$right}: 4px;
+    }
+    &__arrow {
+        transition: all 0.3s linear;
+    }
+    .dropdown-menu {
+        padding: 20px 16px 16px;
+        padding-#{$left}: 8px;
+        width: 222px;
+        background: $white;
+        border: 1px solid $grey-200;
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+        li {
+            .dropdown-item {
+                height: 46px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-#{$left}: 24px;
+                padding-#{$right}: 20px;
+                font-family: $muli, $muli-r;
+                font-weight: $weight-400;
+                font-size: $font-14;
+                line-height: 20px;
+                letter-spacing: -0.2px;
+                color: $black;
+                &.disabled {
+                    font-family: $muli, $muli-sb;
+                    font-weight: $weight-600;
+                    font-size: $font-12;
+                    line-height: 15px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $grey-400;
+                }
+                &:hover,
+                &:focus,
+                &:active {
+                    background-color: $grey-50;
+                }
+            }
+        }
+    }
+}
+
+.mainHead {
+    text-align: center;
+    &__title {
+        font-family: $muli, $muli-xb;
+        font-weight: $weight-800;
+        font-size: 60px;
+        line-height: 68px;
+        letter-spacing: -2px;
+        color: $black;
+        width: 63%;
+        margin: 12px auto 20px auto;
+        @include max1280 {
+            width: 90%;
+        }
+        @include max992 {
+            width: 83%;
+            font-size: 45px;
+            letter-spacing: -1.5px;
+            line-height: 48px;
+        }
+        @include max576 {
+            font-size: 32px;
+            line-height: 40px;
+            width: 100%;
+        }
+        span {
+            color: $blue-600;
+        }
+    }
+    &__desc {
+        font-family: $sans-r, $muli-xb;
+        font-weight: $weight-400;
+        font-size: $font-14;
+        line-height: 24px;
+        color: $grey-500;
+        width: 49%;
+        margin: auto;
+        @include max1280 {
+            width: 57%;
+        }
+        @include max992 {
+            width: 73%;
+        }
+        @include max576 {
+            width: 100%;
+        }
+    }
+}
+
+.head__small {
+    .sub_title {
+        font-family: $muli, $muli-sb;
+        font-weight: $weight-600;
+        font-size: 11px;
+        line-height: 18px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: $white;
+        .icon {
+            margin-#{$right}: 8px;
+        }
+    }
+    .title {
+        font-family: $muli, $muli-xb;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 68px;
+        letter-spacing: -2px;
+        color: $yellow-600;
+        margin: 12px 0 20px;
+        @include max1280 {
+            font-size: 45px;
+            line-height: 50px;
+        }
+        @include max992 {
+            letter-spacing: -1.5px;
+        }
+        @include max576 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+    .desc {
+        font-family: $sans-r;
+        font-weight: $weight-400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $grey-600;
+    }
+}
+
+.index {
+    position: relative;
+    z-index: 5;
+    &.mainContainerX {
+        padding: 0 50px;
+        height: 100%;
+    }
+    background-color: #fff;
+    .submittalFilter .subFilter a {
+        margin-top: 7px;
+        margin-#{$right}: 10px;
+    }
+    hr {
+        border-color: #e9ecf0;
+        border-top: 0;
+    }
+    .box {
+        padding: 15px;
+        h3 {
+            font-size: 25px;
+            font-family: $muli-b;
+            margin: 15px;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                width: 31%;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                font-weight: bold;
+                cursor: pointer;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 5px 5px -5px #333;
+                a {
+                    color: #1e70bf;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    .lastUpdate {
+                        display: block;
+                        font-size: 11px;
+                        font-weight: normal;
+                        color: #333;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Typography {
+    h3 {
+        font-family: $muli, $muli-r;
+        font-weight: $weight-400;
+        color: #000000;
+        letter-spacing: -0.5px;
+        margin-bottom: 32px;
+        &.heading1 {
+            font-family: $muli, $muli-xb;
+            font-weight: $weight-800;
+            font-size: 70px;
+            line-height: 74px;
+            letter-spacing: -2px;
+        }
+        &.heading2 {
+            font-family: $muli, $muli-b;
+            font-weight: $weight-700;
+            font-size: 45px;
+            line-height: 50px;
+            letter-spacing: -2px;
+        }
+        &.heading3 {
+            font-family: $muli, $muli-sb;
+            font-weight: $weight-600;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.2px;
+        }
+        &.heading4 {
+            font-family: $muli, $muli-r;
+            font-weight: $weight-400;
+            font-size: 24px;
+            line-height: 40px;
+            letter-spacing: -0.2px;
+        }
+        &.heading5 {
+            font-family: $muli, $muli-sb;
+            font-weight: $weight-600;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+        }
+        &.heading6 {
+            font-family: $muli, $muli-r;
+            font-weight: $weight-400;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+        }
+        &.heading7 {
+            font-family: $muli, $muli-sb;
+            font-weight: $weight-600;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: -0.2px;
+        }
+        &.heading8 {
+            font-family: $muli, $muli-r;
+            font-weight: $weight-400;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: -0.2px;
+        }
+        &.heading9 {
+            font-family: $muli, $muli-sb;
+            font-weight: $weight-600;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.2px;
+        }
+        &.heading10 {
+            font-family: $muli, $muli-r;
+            font-weight: $weight-400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.2px;
+        }
+        &.heading11 {
+            font-family: $muli, $muli-sb;
+            font-weight: $weight-600;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &.heading12 {
+            font-family: $muli, $muli-r;
+            font-weight: $weight-400;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    &.local {
+        h3 {
+            font-family: $muli-r;
+            color: #000000;
+            letter-spacing: -0.5px;
+            margin-bottom: 32px;
+            &.heading1 {
+                font-family: $muli-xb;
+                font-size: 70px;
+                line-height: 74px;
+                letter-spacing: -2px;
+            }
+            &.heading2 {
+                font-family: $muli-b;
+                font-size: 45px;
+                line-height: 50px;
+                letter-spacing: -2px;
+            }
+            &.heading3 {
+                font-family: $muli-sb;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -0.2px;
+            }
+            &.heading4 {
+                font-family: $muli-r;
+                font-size: 24px;
+                line-height: 40px;
+                letter-spacing: -0.2px;
+            }
+            &.heading5 {
+                font-family: $muli-sb;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+            }
+            &.heading6 {
+                font-family: $muli-r;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+            }
+            &.heading7 {
+                font-family: $muli-sb;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: -0.2px;
+            }
+            &.heading8 {
+                font-family: $muli-r;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: -0.2px;
+            }
+            &.heading9 {
+                font-family: $muli-sb;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.2px;
+            }
+            &.heading10 {
+                font-family: $muli-r;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.2px;
+            }
+            &.heading11 {
+                font-family: $muli-sb;
+                font-size: 12px;
+                line-height: 16px;
+            }
+            &.heading12 {
+                font-family: $muli-r;
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+
+
+ 

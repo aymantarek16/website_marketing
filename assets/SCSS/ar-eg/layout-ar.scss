@@ -1,0 +1,42 @@
+$left: right;
+$right: left;
+
+$ltr: rtl;
+$rtl: ltr;
+
+@import "../utilities/variableAr";
+@import "../utilities/normalize";
+@import "..//utilities/mediaQuery";
+@import "../utilities/mixins";
+@import "../components/Elements/All-Elements";
+@import "../components/header";
+@import "../components/footer";
+@import "../components/generalComponents";
+
+
+/*pages*/
+
+@import "../pages/home";
+@import "../pages/company";
+@import "../pages/customers";
+@import "../pages/features";
+@import "../pages/enterprise";
+@import "../pages/contact";
+@import "../pages/soloution";
+@import "../pages/pricing";
+@import "../pages/pm";
+@import "../pages/contract";
+@import "../pages/procurement";
+@import "../pages/cost_managment";
+@import "../pages/estimation";
+@import "../pages/quality";
+@import "../pages/equipments";
+@import "../pages/accounting";
+@import "../pages/hr";
+
+
+
+
+
+
+@import "../utilities/ar-edition";

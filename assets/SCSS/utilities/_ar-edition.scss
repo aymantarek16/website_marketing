@@ -1,0 +1,39 @@
+
+.btn.mediumBtn.icon-r .icon,
+.clients .more img,
+.header .navbar .navbar-nav .nav-item .menu.sub-menu .sub-menu--head .icon,
+.header .navbar .navbar-nav .nav-item .menu__link--sub .arrow,
+.header .navbar .navbar-nav .nav-item .menu__link::after,
+.header .navbar .navbar-nav .nav-item .sub-menu .child .products .product .info__title::after,
+.our__success .successSlider .slick-next,
+.header .navbar .mobile-menu .m-menu .m-menu label.m-menu__toggle,
+.solutions__for .solutions .solution__link .icon,
+.cta__actions .largeBtn   .icon,
+.integration .head__small .more .icon ,
+.support-cards .support-box .text .title .img .arrow,
+.arrow,
+.play-arrow
+{
+  transform: scaleX(-1);
+}
+.our__success {
+  .successSlider {
+    .slick-prev {
+      transform: none;
+    }
+    .slick-next {
+      top: 101px;
+      @include max768 {
+        top: 358px;
+      }
+    }
+  }
+}
+
+.header .navbar .mobile-menu .m-menu ul li label.a-label__chevron::after,
+.monitors .nav-pills .nav-link.active::before {
+  transform: translateY(-50%) scaleX(-1);
+}
+.header .navbar .mobile-menu .m-menu {
+  transform: translate3d(-200%, 0, 0);
+}

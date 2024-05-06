@@ -1,0 +1,132 @@
+.cost_hero {
+    .pm_hero__items__title {
+        color: $red-300;
+
+        .spanII {
+            color: $red-400;
+        }
+
+        .spanIII {
+            span {
+                margin-#{$right}: 20px;
+            }
+        }
+    }
+}
+
+.delivering {
+    padding: 105px 0 90px;
+
+    @include max992 {
+        padding: 72px 0 55px;
+    }
+
+    @include max768 {
+        padding: 55px 0 72px;
+    }
+
+    .container {
+        padding: 0 8px;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 30px !important;
+
+        @media (min-width: 992px) {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+
+        @include max992 {
+            margin-bottom: 1px;
+        }
+
+        @include max768 {
+            margin-bottom: 0;
+        }
+
+        &__title {
+            font-family: $muli $muli-xb;
+            font-size: 70px;
+            font-weight: $weight-800;
+            line-height: 74px;
+            letter-spacing: -2px;
+            color: $green-500;
+            margin-bottom: 24px;
+
+            @include max992 {
+                font-size: $font-45;
+                line-height: 48px;
+                letter-spacing: -1.5px;
+            }
+
+            span {
+                color: $blue-500;
+            }
+        }
+
+        &__desc {
+            font-family: $sans-r;
+            font-size: $font-14;
+            font-weight: $weight-400;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: $grey-500;
+        }
+    }
+
+
+    &__image {
+        img {
+            width: 100% !important;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0 8px;
+
+        @include max768 {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px 8px;
+
+        }
+
+        .item {
+            display: flex;
+
+            img {
+                height: 16px;
+                width: 16px;
+                margin-#{$right}: 12px;
+            }
+
+            p {
+                font-family: $muli $muli-r;
+                font-size: $font-12;
+                font-weight: $weight-400;
+                line-height: 16px;
+                color: $grey-600 ;
+            }
+        }
+    }
+}
+
+.support-features_cost {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, rgba(32, 71, 252, 0.8) 0%, #2047FC 98.82%);
+        mix-blend-mode: hard-light;
+        box-shadow: 0px 0px 8px rgba(41, 76, 255, 0.5);
+    }
+}

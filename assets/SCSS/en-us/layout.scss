@@ -1,0 +1,36 @@
+$left: left;
+$right: right;
+
+$ltr: ltr;
+$rtl: rtl;
+// @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "../utilities/variables";
+@import "../utilities/normalize";
+@import "../utilities/mixins";
+@import "../components/Elements/All-Elements";
+@import "../components/header";
+@import "../components/footer";
+@import "../components/generalComponents";
+@import "../utilities/mediaQuery";
+
+/*pages*/
+
+@import "../pages/home";
+@import "../pages/company";
+@import "../pages/customers";
+@import "../pages/features";
+@import "../pages/enterprise";
+@import "../pages/contact";
+@import "../pages/soloution";
+@import "../pages/pricing";
+@import "../pages/pm";
+@import "../pages/contract";
+@import "../pages/procurement";
+@import "../pages/cost_managment";
+@import "../pages/estimation";
+@import "../pages/quality";
+@import "../pages/equipments";
+@import "../pages/accounting";
+@import "../pages/hr";

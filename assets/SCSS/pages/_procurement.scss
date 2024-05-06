@@ -1,0 +1,111 @@
+.pm_procurement {
+    .pm_hero__items__title {
+        color: $green-500;
+    }
+}
+
+.cost_procurement {
+    .accordiondContent {
+        position: relative;
+
+        &::after {
+            bottom: 145px !important;
+
+            @include max1366 {
+                bottom: 200px !important;
+            }
+
+            @media (min-width: 1280px) and (max-width: 1300px) {
+                bottom: 145px !important;
+            }
+
+
+            @media (min-width: 830px) and (max-width: 864px) {
+                bottom: 90px;
+
+            }
+
+            @media (min-width: 864px) and (max-width: 991px) {
+                bottom: 65px;
+            }
+
+            @include max992 {
+                bottom: 0 !important;
+                content: '' !important;
+            }
+
+
+        }
+    }
+}
+
+
+.workFlow_procurement {
+    background: $grey-50 !important;
+    
+    &::before{
+        border: 2px solid rgba(0, 0, 255, 0.830) !important;
+        background: rgba(0, 0, 255, 0.830) !important;
+    }
+
+    &::after {
+        border: 2px solid rgba(0, 0, 255, 0.830) !important;
+        background: rgba(0, 0, 255, 0.830) !important;
+    }
+
+    .bottom {
+        bottom: -50px !important;
+        #{$right}: auto !important;
+    }
+
+    &__text {
+        margin-top: 140px;
+
+        &__subTitle {
+            font-family: $muli;
+            font-size: $font-16;
+            font-weight: $weight-800;
+            line-height: 22px;
+            letter-spacing: -0.2px;
+            color: $blue-600;
+            margin-bottom: 18px;
+
+            @include max992 {
+                font-size: 13px;
+                margin-bottom: 8px;
+            }
+        }
+
+        &__title {
+            font-family: $muli $muli-xb;
+            font-size: $font-45;
+            font-weight: $weight-800;
+            line-height: 48px;
+            letter-spacing: -1.5px;
+            color: #1C1E26;
+            margin-bottom: 22px;
+
+            @include max992 {
+                margin-bottom: 8px;
+                font-size: $font-36;
+                line-height: 44px;
+                letter-spacing: -1px;
+            }
+        }
+
+        &__desc {
+            font-family: $sans-r;
+            font-size: $font-14;
+            font-weight: $weight-400;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: $grey-500;
+
+            @include max992 {
+                font-size: $font-12;
+                line-height: 22px;
+             }
+
+        }
+    }
+}

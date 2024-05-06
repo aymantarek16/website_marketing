@@ -1,0 +1,88 @@
+.contact {
+    height: 100%;
+    min-height: 100vh;
+    background-color: $white;
+    &__logo {
+        padding: 40px 0 30px;
+        text-align: center;
+    }
+    &__text {
+        text-align: center;
+        .title {
+            font-family: $muli, $muli-b;
+            font-weight: $weight-600;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: -1px;
+            color: $black;
+        }
+        .desc {
+            font-family: $sans-r, $muli;
+            font-weight: $weight-400;
+            font-size: $font-12;
+            line-height: 22px;
+            color: $grey-500;
+            margin: 20px 0 12px;
+        }
+        .question {
+            font-family: $muli, $muli-sb;
+            font-weight: $weight-600;
+            font-size: $font-12;
+            line-height: 20px;
+            letter-spacing: -0.2px;
+            color: $black;
+            .link {
+                color: $blue-600;
+                text-decoration: underline;
+            }
+        }
+    }
+    .proForm {
+        margin: 50px 0;
+        .control-label{
+            &.required {
+                color: $grey-400;
+                font-weight: $weight-400
+            }
+        }
+        .form-select {
+            height: 48px;
+            color: $grey-700;
+            font-size: $font-14;
+            font-family: $sans-r, $muli;
+            border: solid 2px $grey-100;
+            &:focus {
+                box-shadow: none;
+                border-color: $focus;
+            }
+        }
+        .ui.input.inputDev {
+            textarea {
+                &.textarea {
+                    height: 96px;
+                    &::placeholder {
+                        color: $grey-400;
+                    }
+                }
+            }
+        }
+        .btn {
+            margin-top: 48px;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    .contact-img-box {
+        @include max992 {
+            text-align: center;
+        }
+        .contact-img {
+            position: fixed;
+            #{$right}: 0;
+            top: 0;
+            @include max1200 {
+                position: static;
+            }
+        }
+    }
+}

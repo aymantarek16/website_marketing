@@ -1,0 +1,118 @@
+// fonts
+// --------------------------------------------------
+/*ENglish*/
+
+// font-family: 'Muli', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+@font-face {
+  font-family: font-r;
+  font-weight: 400;
+  src: url("../../fonts/Mulish-Regular.ttf");
+}
+
+@font-face {
+  font-family: font-l;
+  font-weight: 200;
+  src: url("../../fonts/Mulish-Light.ttf");
+}
+
+@font-face {
+  font-family: font-xb;
+  font-weight: 800;
+  src: url("../../fonts/Mulish-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: font-b;
+  font-weight: 700;
+  src: url("../../fonts/Mulish-Bold.ttf");
+}
+
+@font-face {
+  font-family: font-black;
+  src: url("../../fonts/Mulish-Black.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: font-sb;
+  src: url("../../fonts/Mulish-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: font-opens;
+  src: url("../../fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: font-opensb;
+  font-weight: 600;
+  src: url("../../fonts/OpenSans-Semibold.ttf");
+}
+
+@font-face {
+  font-family: font-openb;
+  src: url("../../fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: roboto-M;
+  src: url("../../fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+
+/* Arabic */
+@font-face {
+  font-family: cairo-r;
+  src: url("../../fonts/Cairo/Cairo-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: cairo-sb;
+  font-weight: 600;
+  src: url("../../fonts/Cairo/Cairo-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: cairo-b;
+  src: url("../../fonts/Cairo/Cairo-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: cairo-xb;
+  src: url("../../fonts/Cairo/Cairo-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: cairo-black;
+  src: url("../../fonts/Cairo/Cairo-Black.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: montserrat-sb;
+  font-weight: 600;
+  src: url("../../fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: montserrat-m;
+  src: url("../../fonts/Montserrat-MediumItalic.ttf");
+  font-weight: 500;
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5 {
+//   font-family: "Muli", sans-serif;
+//   font-weight: 400;
+// }

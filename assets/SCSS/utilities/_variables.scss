@@ -1,0 +1,178 @@
+//
+// Variables
+// --------------------------------------------------
+@import "./fonts";
+
+/* Fonts  Vars*/
+
+$muli-r: font-r;
+$muli-l: font-l;
+$muli-black: font-black;
+$muli-sb: font-sb;
+$muli-b: font-b;
+$muli-bt: font-bt;
+$muli-xb: font-xb;
+
+$sans-r: font-opens;
+$sans-sb: font-opensb;
+$sans-b: font-openb;
+
+$roboto-m: roboto-M;
+$roboto-r: roboto-R;
+$font-num: Myriad Pro, Arial, sans-serif;
+$fa: FontAwesome;
+
+$muli: "Mulish";
+
+/********************************************/
+
+// == background == //
+
+$bg-1: linear-gradient(196.03deg, #1C1E26 10.93%, #121418 89.23%);
+$bg-2: #101114;
+$bg-3 : linear-gradient(270deg, rgba(32, 71, 252, 0.8) 0%, #2047FC 98.82%);
+
+// == Colors == //
+
+/*Cobalt */
+$cobalt-50: #ebedfa;
+$cobalt-100: #d2d7f0;
+$cobalt-200: #949ce3;
+$cobalt-300: #535fcf;
+$cobalt-400: #0e1fc1;
+$cobalt-500: #0a1899;
+$cobalt-600: #081270;
+$cobalt-700: #050c4d;
+$cobalt-800: #030940;
+$cobalt-900: #01062e;
+
+/*Blue */
+$blue-50: #f2f4ff;
+$blue-100: #cfd6ff;
+$blue-200: #9eaeff;
+$blue-300: #617bff;
+$blue-400: #4261ff;
+$blue-500: #294cff;
+$blue-600: #0f35f5;
+$blue-700: #0321b9;
+$blue-800: #011474;
+$blue-900: #00093b;
+
+/*#Light Green*/
+$lightgreen-50: #eefaed;
+$lightgreen-100: #cef0cc;
+$lightgreen-200: #b7f0b4;
+$lightgreen-300: #8be68a;
+$lightgreen-400: #63db63;
+$lightgreen-500: #37cc3a;
+$lightgreen-600: #0bcd0f;
+$lightgreen-700: #09b30f;
+$lightgreen-800: #088a0f;
+$lightgreen-900: #056e0e;
+
+/*Green */
+$green-50: #f7faf8;
+$green-100: #e3f7ec;
+$green-200: #c0f0d3;
+$green-300: #82d9a6;
+$green-400: #56bf84;
+$green-500: #39a96b;
+$green-600: #219456;
+$green-700: #168047;
+$green-800: #0d6b39;
+$green-900: #045228;
+
+/*Yellow */
+$yellow-50: #fffdf0;
+$yellow-100: #fff9d4;
+$yellow-200: #fff1a1;
+$yellow-300: #ffe866;
+$yellow-400: #ffe033;
+$yellow-500: #ffda08;
+$yellow-600: #ebcc05;
+$yellow-700: #b89f02;
+$yellow-800: #7a6a01;
+$yellow-900: #524701;
+
+/*Red*/
+$red-50: #ffefed;
+$red-100: #fed7d2;
+$red-200: #f1998e;
+$red-300: #e85c4a;
+$red-400: #e1412d;
+$red-500: #e11900;
+$red-600: #ab1300;
+$red-700: #870f00;
+$red-800: #690c00;
+$red-900: #4d0900;
+
+/*grey*/
+$grey-50: #f7f9fa;
+$grey-100: #f0f3f5;
+$grey-200: #dfe7eb;
+$grey-300: #b1c2c9;
+$grey-400: #8fa3ad;
+$grey-500: #6c7c83;
+$grey-600: #556068;
+$grey-700: #393f45;
+$grey-800: #252832;
+$grey-900: #1e212a;
+$header : #252833;      
+
+/*platinum*/
+$platinum-50:  #f7f9fc;
+$platinum-100: #edf1f7;
+$platinum-200: #d8dfed;
+$platinum-300: #c7cedb;
+$platinum-400: #b8c1d1;
+$platinum-500: #a1abbf;
+$platinum-600: #7b869e;
+$platinum-700: #525c75;
+$platinum-800: #333b52;
+$platinum-900: #1d2133;
+
+$white: #fff;
+$black: #1c1e26;
+$focus: #83b4fc;
+$pale_grey: #fafbfc;
+$pale_grey_active: #e9ecf0;
+
+
+$gradientBackground: linear-gradient(196.03deg, $black 10.93%, #121418 89.23%);
+
+/*Basic Spacing*/
+$px-2: 2px;
+$px-4: 4px;
+$px-8: 8px;
+$px-16: 16px;
+$px-32: 32px;
+$px-64: 64px;
+
+////////////////////////////////////
+
+//== Typography ==//
+
+$font-120: 120px !default;
+$font-60: 60px !default;
+$font-45: 45px !default;
+$font-36: 36px !default;
+$font-34: 34px !default;
+$font-32: 32px !default;
+$font-28: 28px !default;
+$font-24: 24px !default;
+$font-20: 20px !default;
+$font-18: 18px !default;
+$font-16: 16px !default;
+$font-14: 14px !default;
+$font-12: 12px !default;
+$font-10: 10px !default;
+
+$letterspacing: -0.2px;
+
+$weight-300: 300;
+$weight-400: 400;
+$weight-500: 500;
+$weight-600: 600;
+$weight-700: 700;
+$weight-800: 800;
+$weight-900: 900;

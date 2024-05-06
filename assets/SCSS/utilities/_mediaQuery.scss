@@ -1,0 +1,151 @@
+@mixin min1921 {
+    @media screen and (min-width: 1191px) {
+        @content;
+    }
+}
+
+@mixin min1400 {
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin min1440 {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin max1400 {
+    @media screen and (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin max1450 {
+    @media screen and (max-width: 1450px) {
+        @content;
+    }
+}
+
+@mixin max1366 {
+    @media screen and (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin max1280 {
+    @media screen and (max-width: 1279px) {
+        @content;
+    }
+}
+
+@mixin max1200 {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin customMediaL {
+    @media (min-width: 1280px) and (max-width: 1920px) {
+        @content;
+    }
+}
+
+@mixin customMediaLM {
+    @media (min-width: 991px) and (max-width: 1280px) {
+        @content;
+    }
+}
+
+
+
+@mixin customMediaM {
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        @content;
+    }
+}
+
+@mixin max1070 {
+    @media screen and (max-width: 1070px) {
+        @content;
+    }
+}
+
+@mixin max1024 {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin max992 {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin max768 {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin min768 {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin customMediaS {
+    @media (min-width: 600px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin max767 {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin max576 {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin max480 {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin max426 {
+    @media screen and (max-width: 426px) {
+        @content;
+    }
+}
+
+@mixin max386 {
+    @media screen and (max-width: 386px) {
+        @content;
+    }
+}
+
+@mixin max376 {
+    @media screen and (max-width: 376px) {
+        @content;
+    }
+}
+
+@mixin max360 {
+    @media screen and (max-width: 360px) {
+        @content;
+    }
+}
+
+@mixin max320 {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}

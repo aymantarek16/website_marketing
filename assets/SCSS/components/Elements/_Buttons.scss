@@ -1,0 +1,171 @@
+.btn.smallBtn,
+.btn.mediumBtn,
+.btn.largeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+  .spinner-border {
+    width: 24px;
+    height: 24px;
+  }
+
+  /*states*/
+
+  &.primaryBtn-1 {
+    background-color: $blue-500;
+    color: $white;
+    border: 1px solid transparent;
+    transition: all 0.3s linear;
+    box-shadow: 0 0 2px transparent;
+
+    &:hover {
+      background-color: $blue-600;
+      color: $white;
+    }
+    &:focus {
+      background-color: $blue-600;
+      color: $white;
+      box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.35);
+    }
+    &:active,
+    &.active {
+      background-color: $blue-500;
+      color: $white;
+      border-color: $blue-300;
+    }
+  }
+
+  &.primaryBtn-2 {
+    color: $white;
+    background-color: $grey-800;
+    border: 1px solid $grey-600;
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: $white;
+      background-color: $black;
+      border-color: $grey-600; 
+    }
+    &:active,
+    &.active {
+      background-color: $platinum-500;
+      border-color: $platinum-400;
+    }
+    &:focus {
+      color: $white;
+      background-color: $platinum-600;
+      box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.35); 
+    }
+  }
+
+  &.defaultBtn {
+    background-color: transparent;
+    color: $white;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background-color: $blue-500;
+    }
+    &:focus {
+      background-color: $blue-600;
+    }
+    &:active,
+    &.active {
+      background-color: $blue-600;
+      border-color: $blue-500;
+    }
+  }
+  /*disabled*/
+
+  &.disabled {
+    background-color: $platinum-100;
+    color: $grey-300;
+    border-color: transparent;
+  }
+}
+/* button sizes */
+
+.btn.smallBtn {
+  height: 32px;
+  padding: 0 14px;
+  font-size: 11px;
+
+  &.icon-r {
+    padding-#{$left}: 7px;
+    justify-content: flex-start;
+
+    .icon {
+      margin-#{$right}: 3px;
+    }
+  }
+
+  &.onlyIcon {
+    min-width: auto;
+    padding: 6px;
+  }
+}
+
+.btn.mediumBtn {
+  height: 36px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-family: $muli, $muli-sb;
+  font-weight: $weight-600;
+  line-height: 14px;
+  &.icon-r {
+    padding-#{$right}: 10px;
+    justify-content: flex-start;
+
+    .icon {
+      margin-#{$left}: 7px;
+    }
+  }
+  &.icon-l {
+    padding-#{$left}: 10px;
+    justify-content: flex-start;
+
+    .icon {
+      margin-#{$right}: 7px;
+    }
+  }
+
+  &.onlyIcon {
+    min-width: auto;
+    padding: 0 28px;
+  }
+}
+
+.btn.largeBtn {
+  height: 48px;
+  font-size: 15px;
+  padding: 0 32px;
+  font-family: $muli, $muli-sb;
+  font-weight: $weight-600;
+  &.icon-r {
+    padding-#{$right}: 20px;
+    justify-content: flex-start;
+
+    .icon {
+      margin-#{$left}: 7px;
+    }
+  }
+  &.icon-l {
+    padding-#{$left}: 20px;
+    justify-content: flex-start;
+
+    .icon {
+      margin-#{$right}: 7px;
+    }
+  }
+
+  &.onlyIcon {
+    min-width: auto;
+    padding: 6px;
+  }
+}
+
+/* buttons states */

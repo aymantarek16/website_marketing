@@ -1,0 +1,237 @@
+footer {
+    background-color: #101114;
+    > .container {
+        padding-top: 60px;
+        position: relative; 
+        @include max576 {
+            padding-top: 35px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            #{$left}: 0;
+            #{$right}: 0;
+            height: 3px;
+            background: linear-gradient(90deg, rgba(34, 37, 48, 0.2) 0%, #474d63 49.57%, rgba(34, 37, 48, 0.2) 100%);
+        }
+    }
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 10%;
+        @include max992 {
+            justify-content: flex-start;
+            height: 100%;
+        }
+        .info {
+            font-family: $sans-r;
+            font-size: $font-12 + 1;
+            line-height: 22px;
+            color: $grey-600;
+            margin-top: 24px;
+            margin-#{$left}: 8px;
+            @include max768 {
+                margin-#{$left}: 0;
+            }
+        }
+        .Newsletter {
+            margin-#{$left}: 8px;
+            @include max992 {
+                margin-top: 24px;
+            }
+            @include max768 {
+                margin-#{$left}: 0;
+            }
+            .title {
+                font-family: $muli, $muli-sb;
+                font-weight: $weight-600;
+                font-size: $font-14;
+                line-height: 20px;
+                letter-spacing: -0.2px;
+                color: $grey-500;
+            }
+            .sub__title {
+                font-family: $sans-r;
+                font-size: $font-12;
+                line-height: 22px;
+                color: $grey-600;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+            .form-group {
+                position: relative;
+                .form-control {
+                    background: rgba($color: $black, $alpha: 0.5);
+                    border: 1px solid $grey-700;
+                    border-radius: 4px;
+                    color: $white;
+                    box-shadow: none;
+                    font-family: $muli, $muli-r;
+                    font-weight: $weight-400;
+                    font-size: $font-14;
+                    line-height: 20px;
+                    letter-spacing: -0.2px;
+                    color: $white;
+                    &::placeholder {
+                        color: rgba($color: $white, $alpha: 0.5);
+                    }
+                }
+            }
+        }
+    }
+    .footer-links {
+        .title {
+            font-family: $muli, $muli-sb;
+            font-weight: $weight-600;
+            font-size: $font-14;
+            line-height: 20px;
+            letter-spacing: -0.2px;
+            color: $grey-500;
+            margin-bottom: 32px;
+            padding-top: 10px;
+            @include max768 {
+                margin: 32px 0 20px;
+                padding-top: 0;
+            }
+            @include max576 {
+                font-size: $font-18;
+                line-height: 24px;
+                margin: 40px 0;
+            }
+        }
+        .links {
+            li {
+                height: 24px;
+                @include max992 {
+                    height: auto;
+                }
+                &:not(:last-of-type) {
+                    margin-bottom: 12px;
+                }
+                &.line {
+                    display: flex;
+                    align-items: center;
+                    // margin: 25px 0;
+                    // margin: 21px 0;
+                    span {
+                        width: 120px;
+                        height: 1px;
+                        background: $grey-700;
+                        opacity: 0.6;
+                        display: block;
+                    }
+                }
+                .link {
+                    font-family: $sans-r;
+                    font-size: $font-14;
+                    line-height: 24px;
+                    color: $grey-300;
+                    display: block;
+                }
+                .sub__Title {
+                    font-family: $muli, $muli-sb;
+                    font-weight: $weight-600;
+                    font-size: $font-14;
+                    line-height: 20px;
+                    letter-spacing: -0.2px;
+                    color: $grey-500;
+                    @include max576 {
+                        font-size: $font-18;
+                        line-height: 24px;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .bottom-footer {
+        position: relative;
+        margin: 60px 0 0 0;
+        padding: 24px 0;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            #{$left}: 0;
+            #{$right}: 0;
+            height: 3px;
+            background: linear-gradient(90deg, rgba(34, 37, 48, 0.2) 0%, #474d63 49.57%, rgba(34, 37, 48, 0.2) 100%);
+        }
+        .language {
+            margin-#{$left}: 8px;
+            @include max768 {
+                margin-#{$left}: 0;
+
+                .dropdown-toggle {
+                    width: 100%;
+                }
+            }
+        }
+        .downloadApp {
+            display: flex;
+            // flex-wrap: wrap;
+            @include max768 {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            li {
+                &:not(:last-of-type) {
+                    margin-#{$right}: 7px;
+                    @include max1280 {
+                        margin-#{$right}: 0;
+                    }
+                }
+                img {
+                    @include max576 {
+                        height: 49px;
+                    }
+                }
+            }
+        }
+        .site-links {
+            @include max768 {
+                text-align: center;
+                margin-top: 24px;
+            }
+            a {
+                font-family: $muli, $muli-r;
+                font-weight: $weight-400;
+                font-size: $font-10;
+                line-height: 13px;
+                color: $grey-600;
+                &:not(:last-of-type) {
+                    margin-#{$right}: 11px;
+                }
+            }
+            &.copyRights {
+                margin-top: 24px;
+                font-family: $sans-r;
+                font-weight: $weight-400;
+                font-size: 8px;
+                line-height: 12px;
+                text-align: center;
+                color: $grey-500;
+            }
+        }
+        .social {
+            @include max768{
+                margin-top: 20px;
+                justify-content: center;
+            }
+            li {
+                a {
+                    svg {
+                        @include max576 {
+                            height: 49px;
+                            width: 49px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

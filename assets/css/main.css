@@ -1,0 +1,182 @@
+
+
+.product-info-section .header {
+    padding: 49px 0;
+}
+@media (max-width: 767px) {
+    .product-info-section {
+        margin-top: -25px;
+    }
+    .product-info-section .header {
+        padding: 26px 0;
+    }
+    .product-info-section .header h4 {
+        padding: 24px 52px 0 0;
+        display: none;
+    }
+}
+.product-info-section .title-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 10px;
+}
+@media (max-width: 767px) {
+    .product-info-section .title-wrap {
+        padding-top: 0;
+    }
+}
+.product-info-section .title-wrap strong {
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font: 700 16px/1.5 "Apercu Pro", "Helvetica Neue", Helvetica, sans-serif;
+    color: #78777d;
+}
+.product-info-section .content-wrap {
+    padding-top: 5px;
+    line-height: 1.778;
+}
+@media (min-width: 1024px) {
+    .product-info-section .content-wrap {
+        padding-right: 10px;
+    }
+}
+.product-info-section .content-wrap p {
+    margin-bottom: 25px;
+}
+.product-info-section .ico-wrap {
+    width: 32px;
+    margin-right: 16px;
+}
+@media (max-width: 767px) {
+    .product-info-section .content-wrap {
+        padding-top: 0;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: -8px;
+    }
+    .product-info-section .ico-wrap {
+        margin-right: 8px;
+    }
+}
+.product-info-section .ico-wrap [class*="icon-"] {
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    color: #78777d;
+    font-size: 26px;
+}
+.product-info-section .ico-wrap .icon-insights {
+    font-size: 26px;
+}
+.product-info-section h4 {
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    color: #78777d;
+    margin: 0;
+}
+.product-info-section .block-img {
+    position: relative;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.product-info-section .block-img:after {
+    content: "";
+    display: block;
+    position: relative;
+    padding-bottom: 58.82%;
+}
+.product-info-section .block-img img {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.product-info-section .content {
+    padding-bottom: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+}
+.product-features-section {
+    position: relative;
+    color: #000;
+    height: 100%;
+}
+.product-features--content {
+    width: 390px;
+    padding-right: 50px;
+}
+.product-features--sticky {
+    position: sticky;
+    top: 50px;
+    /* height: calc(100% - 85px); */
+    height: 100%;
+    margin-left: 390px;
+    margin-right: -120px;
+    width: 100%;
+    max-width: 57%;
+    pointer-events: none;
+    backface-visibility: hidden;
+}
+.product-features--sticky-items {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 850px;
+    pointer-events: none;
+    backface-visibility: hidden;
+    will-change: transform; */
+}
+
+.product-features--sticky-items img {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    max-width: 100%;
+}
+
+.product-features--item {
+    padding: 40px 0;
+}
+@media (min-width: 768px) {
+    .product-features--item {
+        padding: 120px 0 220px;
+    }
+}
+
+.product-features--item header .title-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.product-features--item header .title-wrap strong {
+
+    flex: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.product-features--item header .ico-wrap {
+    width: 36px;
+    height: 36px;
+    margin-right: 16px;
+}
+

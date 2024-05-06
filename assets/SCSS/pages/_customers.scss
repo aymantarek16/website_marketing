@@ -1,0 +1,336 @@
+.customers.company-section {
+    background: $white;
+    &::after {
+        content: "";
+        background-image: url("../../images/customers.svg");
+        @include max992 {
+            background-image: url("../../images/customers-t.svg");
+            top: 122px;
+        }
+        @include max768 {
+            background-image: url("../../images/customers-m.svg");
+            top: 91px;
+        }
+    }
+    .content {
+        &__sub {
+            @include max768 {
+                font-size: 11px;
+            }
+        }
+        &__title {
+            color: $black;
+            font-family: $muli, $muli-black;
+            font-weight: 900;
+            span {
+                color: $black;
+                &.noUnderline {
+                    color: $lightgreen-500;
+                    display: block;
+                    &::after {
+                        display: none;
+                    }
+                }
+                &::after {
+                    background-image: url("../../images/customersUnderLine.png");
+                }
+            }
+        }
+    }
+}
+.company_logos {
+    background-color: $white;
+    padding: 124px 0 0 0;
+    @include max992 {
+        padding: 80px 0 0 0;
+    }
+    @include max768 {
+        padding: 70px 0 0 0;
+    }
+    .features__tabs {
+        justify-content: center;
+        margin-top: 0;
+
+        .nav-item {
+            margin: 0;
+            width: auto;
+            .nav-link {
+                height: 42px;
+                width: auto;
+                font-family: $muli, $muli-sb;
+                font-weight: $weight-600;
+                font-size: $font-16;
+                line-height: 22px;
+                letter-spacing: -0.2px;
+                color: $black;
+                background: $grey-100;
+                border-radius: 14px;
+                margin: 0 4px;
+                border: 0;
+                padding: 0 20px;
+                transition: all 0.3s linear;
+                @include max992 {
+                    font-size: $font-14;
+                    height: 36px;
+                    margin: 0 4px;
+                    padding: 0 8px;
+                }
+                @include max768 {
+                    font-size: $font-12;
+                }
+                @include max376 {
+                    margin: 0 4px 4px;
+                }
+                &:hover,
+                &.active {
+                    color: $white;
+                    background-color: $black;
+                }
+            }
+        }
+    }
+    .features__content {
+        padding-top: 0;
+        .compaines {
+            margin-bottom: 0;
+            @include max992 {
+                margin-top: 40px;
+            }
+            @include max768 {
+                margin-top: 32px;
+            }
+            .company {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+$storyCardHeight: 480px;
+$storyCardHeight-t: 428px;
+$storyCardHeight-m: 360px;
+
+.success_stories {
+    padding: 88px 0 40px;
+    background-color: $white;
+    @include max992 {
+        padding: 56px 0 60px;
+    }
+    .head__small {
+        text-align: center;
+        margin-bottom: 64px;
+        @include max992 {
+            margin-bottom: 48px;
+        }
+        @include max992 {
+            margin-bottom: 44px;
+        }
+        .title {
+            font-family: $muli, $muli-xb;
+            font-weight: $weight-800;
+            font-size: 45px;
+            line-height: 48px;
+            letter-spacing: -1.5px;
+            color: $black;
+            margin: 0;
+            @include max992 {
+                font-size: 36px;
+                line-height: 44px;
+                letter-spacing: -1px;
+            }
+            @include max768 {
+                font-size: 32px;
+                line-height: 40px;
+                letter-spacing: -0.5px;
+            }
+        }
+    }
+    .storyCard {
+        margin-bottom: 16px;
+        border: 1px solid $grey-200;
+        border-radius: 12px;
+        background-color: $white;
+        height: $storyCardHeight;
+        overflow: hidden;
+        display: block;
+        transition: all 0.3s linear;
+        @include max992 {
+            height: $storyCardHeight-t;
+        }
+        @include max768 {
+            height: $storyCardHeight-m;
+        }
+        &__image {
+            height: 210px;
+            max-height: 210px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                #{$left}: 0;
+                #{$right}: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: $black, $alpha: 0.6);
+                border-top-#{$left}-radius: 12px;
+                border-top-#{$right}-radius: 12px;
+            }
+            .bg {
+                width: 100%;
+                height: 100%;
+                border-top-#{$left}-radius: 12px;
+                border-top-#{$right}-radius: 12px;
+            }
+            .logo {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                right: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                z-index: 2;
+            }
+        }
+        &__text {
+            padding: 22px 16px 32px;
+            height: calc(#{$storyCardHeight} - 210px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @include max992 {
+                height: calc(#{$storyCardHeight-t} - 210px);
+            }
+            @include max768 {
+                height: calc(#{$storyCardHeight-m} - 210px);
+            }
+            .desc {
+                font-family: $muli, $muli-r;
+                font-weight: $weight-400;
+                font-size: $font-20;
+                letter-spacing: -0.2px;
+                color: $black;
+                line-height: 22px;
+                @include max992 {
+                    font-size: $font-16;
+                }
+                @include max768 {
+                    font-size: $font-14;
+                    line-height: 20px;
+                }
+            }
+            .link {
+                font-family: $muli, $muli-r;
+                font-weight: $weight-400;
+                font-size: $font-16;
+                line-height: 22px;
+                letter-spacing: -0.2px;
+                color: $blue-500;
+                @include max992 {
+                    font-size: $font-14;
+                }
+            }
+            .name {
+                font-family: $muli, $muli-sb;
+                font-weight: $weight-600;
+                font-size: $font-14;
+                line-height: 20px;
+                letter-spacing: -0.2px;
+                color: $grey-700;
+                .company {
+                    font-family: $muli, $muli-r;
+                    font-weight: $weight-400;
+                    color: $grey-500;
+                    @include max992 {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &:hover {
+            border-color: $grey-400;
+        }
+    }
+
+    /* Slider */
+
+    .slider-wrapper {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        pointer-events: none;
+        .storyCard {
+            border: 0;
+            text-align: center;
+            &__image {
+                @include max992 {
+                    height: 161px;
+                }
+                @include max992 {
+                    height: 155px;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+            &__text {
+                @include max992 {
+                    height: calc(#{$storyCardHeight-t} - 161px);
+                }
+                @include max992 {
+                    height: calc(#{$storyCardHeight-m} - 155px);
+                }
+            }
+        }
+    }
+
+    .slick-slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        user-select: none;
+        touch-action: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .slick-arrow {
+        background: #ddd;
+        border: none;
+        border-radius: none;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-20%);
+        padding: 0.25em 0.5em;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        z-index: 400;
+        display: none;
+        &.slick-prev {
+            #{$left}: 0;
+        }
+
+        &.slick-next {
+            #{$right}: 0;
+        }
+    }
+
+    /* progress bar */
+    .slider-progress {
+        width: 100%;
+        height: 8px;
+        background: $grey-200;
+        position: absolute;
+        top: 0;
+        border-radius: 0;
+        .progress {
+            width: 0%;
+            height: 8px;
+            background: $blue-500;
+            border-radius: 0;
+        }
+    }
+
+    @include max768 {
+        .row > * {
+            padding-#{$left}: 4px;
+            padding-#{$right}: 4px;
+        }
+    }
+}
