@@ -1,19 +1,15 @@
 # Web Site Markiting
 
-Web Site Marketing Proocor specializes in creating effective online marketing strategies tailored for the real estate industry. We enhance your digital presence through SEO, targeted advertising, and engaging content to attract potential buyers and sellers. Our comprehensive approach ensures increased visibility, higher engagement, and ultimately, more leads and sales for your real estate business. Partner with us to elevate your online marketing efforts and achieve measurable results.
+Proocor website marketing specializes in creating effective online marketing strategies tailored for the real estate industry. We enhance your digital presence through SEO, targeted advertising, and engaging content to attract potential buyers and sellers. Our comprehensive approach ensures increased visibility, higher engagement, and ultimately, more leads and sales for your real estate business. Partner with us to elevate your online marketing efforts and achieve measurable results.
 
 
 ### Technologies Used:
 
 ---
 
-1.html
-
-2.sass
-
-3.java script
-
-
+1. html
+2. sass
+3. java script
 
 
 
